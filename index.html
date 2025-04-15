@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Altrin Jabist | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0e0e0e;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+    header {
+      background: #111;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,255,255,0.1);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ffe7;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00ffe7;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      color: #00ffe7;
+      margin-bottom: 1rem;
+    }
+
+    .project-card {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 10px rgba(0,255,255,0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #111;
+      color: #999;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #00ffe7;
+      }
+      to {
+        text-shadow: 0 0 20px #00ffe7, 0 0 30px #00ffe7;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Altrin Jabist</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a DevOps enthusiast passionate about automation, CI/CD, and cloud-native tools. I enjoy solving real-world problems with efficient tech solutions and building scalable infrastructure.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Docker, Kubernetes, GitHub Actions</li>
+      <li>Jenkins, Terraform, Git</li>
+      <li>AWS (EC2, S3, RDS, Route 53)</li>
+      <li>Node.js, Express, MongoDB</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Node.js CI/CD Pipeline</h3>
+      <p>Automated the deployment of a Node.js app using GitHub Actions and Docker. Integrated testing, image building, and deployment stages.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Kubernetes with Minikube</h3>
+      <p>Deployed an app locally using Minikube with YAML manifests for deployment and services. Scaled pods and managed resources using kubectl.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Static Website on GitHub Pages</h3>
+      <p>Created a modern portfolio website using HTML, CSS, and hosted it via GitHub Pages.</p>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:altrinjabist@example.com" style="color:#00ffe7;">altrinjabist@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/AltrinJabist" style="color:#00ffe7;">@AltrinJabist</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Altrin Jabist</p>
+  </footer>
+</body>
+</html>
